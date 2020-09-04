@@ -10,7 +10,7 @@ module.exports = {
     siteTitle: "Gerard Altamirano",
     siteTitleAlt: `Gerard Altamirano Blog`,
     author: "Gerard Altamirano",
-    desscription:
+    description:
       "Blog by Gerard Altamirano, Self-taught software developer. CS Enthusiast. Teaching lover ❤️",
     siteImage:
       "https://i.pinimg.com/originals/21/11/61/21116158daaeb1459b4ec0758505e1ad.gif",
