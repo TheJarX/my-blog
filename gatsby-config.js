@@ -7,6 +7,7 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
 module.exports = {
   siteMetadata: {
     title: "Gerard Altamirano Blog",
+    siteTitle: "Gerard Altamirano",
     siteTitleAlt: `Gerard Altamirano Blog`,
     author: "Gerard Altamirano",
     desscription:
