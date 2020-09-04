@@ -9,7 +9,7 @@ module.exports = {
     title: "Gerard Altamirano Blog",
     siteTitle: "Gerard Altamirano",
     siteTitleAlt: `Gerard Altamirano Blog`,
-    author: "Gerard Altamirano",
+    siteAuthor: "Gerard Altamirano",
     siteDescription:
       "Blog by Gerard Altamirano, Self-taught software developer. CS Enthusiast. Teaching lover ❤️",
     siteImage:
