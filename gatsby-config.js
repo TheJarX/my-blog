@@ -6,7 +6,13 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
 
 module.exports = {
   siteMetadata: {
+    title: "Gerard Altamirano Blog",
     siteTitleAlt: `Gerard Altamirano Blog`,
+    author: "Gerard Altamirano",
+    desscription:
+      "Blog by Gerard Altamirano, Self-taught software developer. CS Enthusiast. Teaching lover ❤️",
+    siteImage:
+      "https://i.pinimg.com/originals/21/11/61/21116158daaeb1459b4ec0758505e1ad.gif",
   },
   plugins: [
     {
