@@ -12,11 +12,13 @@ Anyway, you wanna send JSON requests from the frontend and get responses in the 
 
 ## Adding Olive branch in your RoR project:
 
-1. Add it to your Gemfile and the bundle install 💎:
+1. Add it to your Gemfile 💎:
 
-   ```ruby :title=.Gemfile
+   ```:title=.Gemfile
    gem "olive_branch"
    ```
+
+   And the bundle install
 
    ```bash
    $ bundle install # in your project root directory
@@ -24,21 +26,21 @@ Anyway, you wanna send JSON requests from the frontend and get responses in the 
 
 2. Add the configuration to `config/application.rb`:
 
-```:title=config/application.rb
-config.middleware.use OliveBranch::Middleware
-```
+   ```:title=config/application.rb
+   config.middleware.use OliveBranch::Middleware
+   ```
 
-After this you must include the header `Key-Inflection: camel` and you'll be able to send any request using Camel Case to a REST API using ruby. Responses and request will be automatically parsed.
+   After this you must include the header `Key-Inflection: camel` and you'll be able to send any request using Camel Case to a REST API using ruby. Responses and request will be automatically parsed.
 
-```js
-fetch(MY_URL, {
+   ```js
+   fetch(MY_URL, {
    headers: {
        'Content-type': 'application/json'
        'Key-Tnflection': camel,
    }
-})
-```
+   })
+   ```
 
-Thanks for reading! If you have any feedback, please email me <hello@itsgerard.com> 😃
+   Thanks for reading! If you have any feedback, please email me <hello@itsgerard.com> 😃
 
-📌 I recommend you check the [github repo](https://github.com/vigetlabs/olive_branch) and this other [post](https://www.viget.com/articles/introducing-olivebranch/).
+   📌 I recommend you check the [github repo](https://github.com/vigetlabs/olive_branch) and this other [post](https://www.viget.com/articles/introducing-olivebranch/).
