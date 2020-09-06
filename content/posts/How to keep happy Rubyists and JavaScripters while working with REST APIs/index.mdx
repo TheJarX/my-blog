@@ -32,7 +32,7 @@ Anyway, you wanna send JSON requests from the frontend and get responses in the 
 
    After this you must include the header `Key-Inflection: camel` and you'll be able to send any request using Camel Case to a REST API using ruby. Responses and request will be automatically parsed.
 
-   ```js
+   ```js {4}
    fetch(MY_URL, {
      headers: {
        "Content-type": "application/json",
