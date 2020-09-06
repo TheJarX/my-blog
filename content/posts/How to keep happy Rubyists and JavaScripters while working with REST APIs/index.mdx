@@ -1,0 +1,44 @@
+---
+title: "How to keep happy Rubyists and JavaScripters while working with REST APIs 🐫🐍"
+date: 2020-09-06
+slug: "/keeping-rubyists-and-javascripters-happy"
+---
+
+> (I don't know if JS developer are called in that way, but I wanted to keep the style) 👀
+
+If you are here is because probably you are a Rubyist and you use Snake Case to work at the backend with Rails, and you expect to handle all requests with that case. Or you are a Javascripter working at the frontend using Camel Case with React, Vue, or Vanilla, etc. It's also possible that you are a full-stack and you're suffering from this alone; I understand and support you, my friend.
+
+Anyway, you wanna send JSON requests from the frontend and get responses in the same way. Also, you wanna get Snake Case at the backend and send responses in the same way. Well, fortunately in this story all of us can be happy. Thanks to **Olive branch** this is possible and it's soooo easy to use, let's do it! 👐
+
+## Adding Olive branch in your RoR project:
+
+1. Add it to your Gemfile and the bundle install 💎:
+
+   ```ruby :title=.Gemfile
+   gem "olive_branch"
+   ```
+
+   ```bash
+   $ bundle install # in your project root directory
+   ```
+
+2. Add the configuration to `config/application.rb`:
+
+```:title=config/application.rb
+config.middleware.use OliveBranch::Middleware
+```
+
+After this you must include the header `Key-Inflection: camel` and you'll be able to send any request using Camel Case to a REST API using ruby. Responses and request will be automatically parsed.
+
+```js
+fetch(MY_URL, {
+   headers: {
+       'Content-type': 'application/json'
+       'Key-Tnflection': camel,
+   }
+})
+```
+
+Thanks for reading! If you have any feedback, please email me <hello@itsgerard.com> 😃
+
+📌 I recommend you check the [github repo](https://github.com/vigetlabs/olive_branch) and this other [post](https://www.viget.com/articles/introducing-olivebranch/).
